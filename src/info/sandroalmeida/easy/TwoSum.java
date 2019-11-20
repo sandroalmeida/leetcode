@@ -30,6 +30,7 @@ public class TwoSum {
             if(rests.containsKey(num)){
                 result[0] = rests.get(num);
                 result[1] = i;
+                break;
             } else{
                 rests.put(rest, i);
             }
