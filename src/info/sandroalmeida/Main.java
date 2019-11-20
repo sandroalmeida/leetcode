@@ -1,13 +1,13 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.TwoSum;
+import info.sandroalmeida.easy.ReverseInteger;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        TwoSum.solution();
-
+        //TwoSum.solution();
+        ReverseInteger.solution();
 
     }
 }
