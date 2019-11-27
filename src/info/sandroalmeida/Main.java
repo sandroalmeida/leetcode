@@ -10,7 +10,7 @@ public class Main {
         //ReverseInteger.solution();
         //System.out.println(PalindromeNumber.solution(0));
         //System.out.println(RomanToInteger.solution("CD"));
-        System.out.println(LongestCommonPrefix.solution(new String[]{"almeidasandrocorrea","mrs.sandro","naogosteisandrinho"}));
+        System.out.println(LongestCommonPrefix.solution(new String[]{"almeidasandrocorrea"}));
 
     }
 }

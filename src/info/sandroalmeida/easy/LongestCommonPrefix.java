@@ -23,7 +23,7 @@ public class LongestCommonPrefix {
     public static String solution(String[] strs){
 
         String result = "";
-        if(strs != null){
+        if(strs.length > 1){
             String first = strs[0];
             boolean check = false;
             for(int i = 0; i < first.length(); i++){
@@ -41,6 +41,8 @@ public class LongestCommonPrefix {
                         result = part;
                 }
             }
+        }else if(strs.length == 1){
+            result = strs[0];
         }
         return result;
     }
