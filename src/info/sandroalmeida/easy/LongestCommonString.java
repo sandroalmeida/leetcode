@@ -1,9 +1,12 @@
 package info.sandroalmeida.easy;
 
-public class LongestCommonPrefix {
+public class LongestCommonString {
 
     /*
     *   LeetCode 14
+
+        I misunderstood this problem at first time considering any string in common not only prefix
+        Added the right solution in the class LongestCommonPrefix
 
         Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -27,19 +30,20 @@ public class LongestCommonPrefix {
         if(strs.length > 1){
             String first = strs[0];
             boolean check = false;
-            for(int i = 1; i <= first.length(); i++){
-                String part = first.substring(0,i);
-                for(int x = 1; x < strs.length; x++){
-                    if(strs[x].indexOf(part) == 0){
-                        check = true;
+            for(int i = 0; i < first.length(); i++){
+                for(int z = i+1; z <= first.length(); z++){
+                    String part = first.substring(i,z);
+                    for(int x = 1; x < strs.length; x++){
+                        if(strs[x].contains(part))
+                            check = true;
+                        else{
+                            check = false;
+                            break;
+                        }
                     }
-                    else{
-                        check = false;
-                        break;
-                    }
+                    if(part.length() > result.length() && check)
+                        result = part;
                 }
-                if(part.length() > result.length() && check)
-                    result = part;
             }
         }else if(strs.length == 1){
             result = strs[0];
