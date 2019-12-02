@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.LongestCommonPrefix;
+import info.sandroalmeida.easy.ValidParentheses;
 
 public class Main {
 
@@ -11,7 +11,8 @@ public class Main {
         //System.out.println(PalindromeNumber.solution(0));
         //System.out.println(RomanToInteger.solution("CD"));
         //System.out.println(LongestCommonString.solution(new String[]{"almeidasandrocorrea", "mrs.sandro"}));
-        System.out.println(LongestCommonPrefix.solution(new String[]{"a", "a"}));
+        //System.out.println(LongestCommonPrefix.solution(new String[]{"a", "a"}));
+        System.out.println(ValidParentheses.solution("{[]})"));
 
     }
 }
