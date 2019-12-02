@@ -17,29 +17,30 @@ public class ValidParentheses {
 
     public static boolean solution(String s){
 
-        Deque<String> stack = new ArrayDeque<>();
+        Deque<Character> stack = new ArrayDeque<>();
         char[] items = s.toCharArray();
 
         for(char c: items){
             if(c == '(' || c == '[' || c == '{'){
-                stack.add(c + "");
+                stack.push(c);
+                continue;
             }
             if(!stack.isEmpty()){
                 if(c == ')'){
-                    if(stack.getLast().equals("(")){
-                        stack.removeLast();
+                    if(stack.getFirst().equals('(')){
+                        stack.pop();
                     }else{
                         return false;
                     }
                 }else if(c == ']'){
-                    if(stack.getLast().equals("[")){
-                        stack.removeLast();
+                    if(stack.getFirst().equals('[')){
+                        stack.pop();
                     }else{
                         return false;
                     }
                 }else if(c == '}'){
-                    if(stack.getLast().equals("{")){
-                        stack.removeLast();
+                    if(stack.getFirst().equals('{')){
+                        stack.pop();
                     }else{
                         return false;
                     }

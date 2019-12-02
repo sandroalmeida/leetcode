@@ -12,7 +12,7 @@ public class Main {
         //System.out.println(RomanToInteger.solution("CD"));
         //System.out.println(LongestCommonString.solution(new String[]{"almeidasandrocorrea", "mrs.sandro"}));
         //System.out.println(LongestCommonPrefix.solution(new String[]{"a", "a"}));
-        System.out.println(ValidParentheses.solution("{[]})"));
+        System.out.println(ValidParentheses.solution("{[]}()"));
 
     }
 }
