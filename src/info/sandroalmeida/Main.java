@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.RemoveDuplicatesSortedArray;
+import info.sandroalmeida.easy.RemoveElement;
 
 public class Main {
 
@@ -36,9 +36,16 @@ public class Main {
         }
         */
 
+        /*
         int[] nums = new int[]{1,1,2};
         int result = RemoveDuplicatesSortedArray.solution(nums);
         System.out.println(result);
+        */
+
+        int[] nums = new int[]{0,0,1,2,1,4,5};
+        int result = RemoveElement.solution(nums, 1);
+        System.out.println(result);
+
 
     }
 }
