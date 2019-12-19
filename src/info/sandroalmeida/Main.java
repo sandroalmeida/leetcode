@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.RemoveElement;
+import info.sandroalmeida.easy.SearchInsertPosition;
 
 public class Main {
 
@@ -42,10 +42,15 @@ public class Main {
         System.out.println(result);
         */
 
+        /*
         int[] nums = new int[]{0,0,1,2,1,4,5};
         int result = RemoveElement.solution(nums, 1);
         System.out.println(result);
+        */
 
+        int[] nums = new int[]{8,9,10,12,15,16,17,18,20};
+        int result = SearchInsertPosition.solution(nums, 50);
+        System.out.println(result);
 
     }
 }
