@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.RemoveElement;
+import info.sandroalmeida.easy.ImplementIndexOf;
 
 public class Main {
 
@@ -42,10 +42,13 @@ public class Main {
         System.out.println(result);
         */
 
+        /*
         int[] nums = new int[]{0,0,1,2,1,4,5};
         int result = RemoveElement.solution(nums, 1);
         System.out.println(result);
+        */
 
+        System.out.println(ImplementIndexOf.solution1("baagfdasaaa", "s2a"));
 
     }
 }
