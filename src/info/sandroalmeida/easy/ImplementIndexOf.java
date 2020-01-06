@@ -34,4 +34,34 @@ public class ImplementIndexOf {
         return -1;
     }
 
+    // Using two pointers
+    public static int solution2(String haystack, String needle){
+
+        int H = haystack.length();
+        int N = needle.length();
+
+        int pH = 0;
+        while(pH < H - N + 1){
+            // finding first match
+            while(pH < H - N + 1 && haystack.charAt(pH) != needle.charAt(0))
+                pH++;
+
+            // compute the max match string
+            int currLen = 0, pN = 0;
+            while(pN < N && pH < H && haystack.charAt(pH) == needle.charAt(pN)){
+                pH++;
+                pN++;
+                currLen++;
+            }
+
+            // if whole string is found
+            if(currLen == N)
+                return pH - N;
+
+            // otherwise, return first pointer
+            pH = pH - currLen + 1;
+        }
+        return -1;
+    }
+
 }

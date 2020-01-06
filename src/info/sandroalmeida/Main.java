@@ -48,7 +48,8 @@ public class Main {
         System.out.println(result);
         */
 
-        System.out.println(ImplementIndexOf.solution1("baagfdasaaa", "s2a"));
+        System.out.println(ImplementIndexOf.solution1("baagfdasaaa", "gf"));
+        System.out.println(ImplementIndexOf.solution2("baagfdasaaa", "gf"));
 
     }
 }
