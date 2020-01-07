@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.ImplementIndexOf;
+import info.sandroalmeida.easy.CountAndSay;
 
 public class Main {
 
@@ -48,9 +48,13 @@ public class Main {
         System.out.println(result);
         */
 
+        /*
         System.out.println(ImplementIndexOf.solution1("baagfdasaaa", "gf"));
         System.out.println(ImplementIndexOf.solution2("baagfdasaaa", "gf"));
         System.out.println(ImplementIndexOf.solution3("baagfdasaaa", "gf"));
+        */
+
+        System.out.println(CountAndSay.solution(5));
 
     }
 }
