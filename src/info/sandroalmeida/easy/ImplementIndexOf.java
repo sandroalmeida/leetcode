@@ -1,5 +1,8 @@
 package info.sandroalmeida.easy;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ImplementIndexOf {
 
     /*
@@ -62,6 +65,25 @@ public class ImplementIndexOf {
             pH = pH - currLen + 1;
         }
         return -1;
+    }
+
+    // Using Map
+    public static int solution3(String haystack, String needle){
+
+        if(needle.length() == 0) return 0;
+
+        Map<String, Integer> possibilities = new HashMap<>();
+        int N = needle.length();
+        int H = haystack.length();
+
+        for(int i = 0; i < H; i++){
+
+            if(i + N <= H) possibilities.put(haystack.substring(i, i + N), i);
+            else possibilities.put(haystack.substring(i - N, i), i - N);
+
+        }
+
+        return possibilities.get(needle) != null ? possibilities.get(needle) : -1;
     }
 
 }

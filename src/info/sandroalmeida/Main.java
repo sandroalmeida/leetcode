@@ -50,6 +50,7 @@ public class Main {
 
         System.out.println(ImplementIndexOf.solution1("baagfdasaaa", "gf"));
         System.out.println(ImplementIndexOf.solution2("baagfdasaaa", "gf"));
+        System.out.println(ImplementIndexOf.solution3("baagfdasaaa", "gf"));
 
     }
 }
