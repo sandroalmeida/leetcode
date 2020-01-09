@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.medium.AddTwoNumbers;
+import info.sandroalmeida.easy.CountAndSay;
 
 public class Main {
 
@@ -54,8 +54,10 @@ public class Main {
         System.out.println(ImplementIndexOf.solution3("baagfdasaaa", "gf"));
         */
 
-        //System.out.println(CountAndSay.solution(5));
+        System.out.println(CountAndSay.solution(5));
+        System.out.println(CountAndSay.solution2(5));
 
+        /*
         AddTwoNumbers.ListNode number1 = new AddTwoNumbers.ListNode(2);
         number1.next = new AddTwoNumbers.ListNode(4);
         //number1.next.next = new AddTwoNumbers.ListNode(3);
@@ -65,7 +67,7 @@ public class Main {
         number2.next.next = new AddTwoNumbers.ListNode(4);
 
         AddTwoNumbers.ListNode result = AddTwoNumbers.solution(number1, number2);
-        System.out.println("");
+        */
 
     }
 }

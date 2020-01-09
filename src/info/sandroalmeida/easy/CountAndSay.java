@@ -54,4 +54,24 @@ public class CountAndSay {
         return sb.toString();
     }
 
+    public static String solution2(int n){
+        if(n == 1) return "1";
+        StringBuilder result = new StringBuilder();
+        String prev = solution2(n - 1);
+        int count = 1;
+
+        for (int i = 1; i < prev.length(); i++) {
+            if (prev.charAt(i) == prev.charAt(i - 1)) {
+                count++;
+            } else {
+                result.append(count).append(prev.charAt(i - 1));
+                count = 1;
+            }
+        }
+        result.append(count).append(prev.charAt(prev.length() - 1));
+
+        return result.toString();
+
+    }
+
 }
