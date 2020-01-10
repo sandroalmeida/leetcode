@@ -1,6 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.CountAndSay;
+import info.sandroalmeida.medium.LongestSubstringNotRepeating;
 
 public class Main {
 
@@ -54,8 +54,8 @@ public class Main {
         System.out.println(ImplementIndexOf.solution3("baagfdasaaa", "gf"));
         */
 
-        System.out.println(CountAndSay.solution(5));
-        System.out.println(CountAndSay.solution2(5));
+        //System.out.println(CountAndSay.solution(5));
+        //System.out.println(CountAndSay.solution2(5));
 
         /*
         AddTwoNumbers.ListNode number1 = new AddTwoNumbers.ListNode(2);
@@ -68,6 +68,8 @@ public class Main {
 
         AddTwoNumbers.ListNode result = AddTwoNumbers.solution(number1, number2);
         */
+
+        System.out.println(LongestSubstringNotRepeating.solution("pwwkew"));
 
     }
 }
