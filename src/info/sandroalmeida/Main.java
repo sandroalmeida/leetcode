@@ -69,7 +69,7 @@ public class Main {
         AddTwoNumbers.ListNode result = AddTwoNumbers.solution(number1, number2);
         */
 
-        System.out.println(LongestSubstringNotRepeating.solution("pwwkew"));
+        System.out.println(LongestSubstringNotRepeating.solution("piroca"));
 
     }
 }
