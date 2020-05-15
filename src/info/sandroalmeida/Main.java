@@ -1,8 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.hackerrank.MonotonicArray;
-import info.sandroalmeida.hackerrank.PrintArrayReverseOrder;
-import info.sandroalmeida.medium.LongestSubstringNotRepeating;
+import info.sandroalmeida.easy.MonotonicArray;
 
 public class Main {
 
