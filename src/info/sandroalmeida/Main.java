@@ -1,6 +1,7 @@
 package info.sandroalmeida;
 
 import info.sandroalmeida.easy.MonotonicArray;
+import info.sandroalmeida.easy.ThirdMaximumNumber;
 
 public class Main {
 
@@ -79,9 +80,13 @@ public class Main {
         }
         */
 
+        /*
         int[] input = {4,3,2,0};
         System.out.println(MonotonicArray.solution(input));
+        */
 
+        int[] input = {1,4,6,8,5,10};
+        System.out.println(ThirdMaximumNumber.solution(input));
 
     }
 }
