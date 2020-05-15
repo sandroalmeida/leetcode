@@ -86,7 +86,9 @@ public class Main {
         */
 
         int[] input = {1,4,6,8,5,10,11};
+        System.out.println(ThirdMaximumNumber.solution(input));
         System.out.println(ThirdMaximumNumber.solution2(input));
+        System.out.println(ThirdMaximumNumber.solution3(input));
 
     }
 }
