@@ -1,5 +1,7 @@
 package info.sandroalmeida;
 
+import info.sandroalmeida.hackerrank.MonotonicArray;
+import info.sandroalmeida.hackerrank.PrintArrayReverseOrder;
 import info.sandroalmeida.medium.LongestSubstringNotRepeating;
 
 public class Main {
@@ -69,7 +71,19 @@ public class Main {
         AddTwoNumbers.ListNode result = AddTwoNumbers.solution(number1, number2);
         */
 
-        System.out.println(LongestSubstringNotRepeating.solution("piroca"));
+        //System.out.println(LongestSubstringNotRepeating.solution("test"));
+
+        /*
+        int[] input = {1,2,3,4};
+        int[] output = PrintArrayReverseOrder.solution(input);
+        for(int i : output){
+            System.out.println(i);
+        }
+        */
+
+        int[] input = {4,3,2,0};
+        System.out.println(MonotonicArray.solution(input));
+
 
     }
 }
