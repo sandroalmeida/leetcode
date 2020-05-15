@@ -85,8 +85,8 @@ public class Main {
         System.out.println(MonotonicArray.solution(input));
         */
 
-        int[] input = {1,4,6,8,5,10};
-        System.out.println(ThirdMaximumNumber.solution(input));
+        int[] input = {1,4,6,8,5,10,11};
+        System.out.println(ThirdMaximumNumber.solution2(input));
 
     }
 }

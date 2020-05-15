@@ -34,4 +34,16 @@ public class ThirdMaximumNumber {
         // Return the Third max
         return Collections.max(setNumbers);
     }
+
+    public static int solution2(int[] input){
+
+        Set<Integer> setNumbers = new HashSet<>();
+        for(int i : input){
+            setNumbers.add(i);
+            if(setNumbers.size() > 3)
+                setNumbers.remove(Collections.min(setNumbers));
+        }
+        return setNumbers.size() == 3 ? Collections.min(setNumbers) : Collections.max(setNumbers);
+    }
+    
 }
