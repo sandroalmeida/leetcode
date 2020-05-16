@@ -2,6 +2,7 @@ package info.sandroalmeida;
 
 import info.sandroalmeida.easy.MonotonicArray;
 import info.sandroalmeida.easy.ThirdMaximumNumber;
+import info.sandroalmeida.hackerrank.MaximumHourglassSum;
 
 public class Main {
 
@@ -85,10 +86,21 @@ public class Main {
         System.out.println(MonotonicArray.solution(input));
         */
 
+        /*
         int[] input = {1,4,6,8,5,10,11};
         System.out.println(ThirdMaximumNumber.solution(input));
         System.out.println(ThirdMaximumNumber.solution2(input));
         System.out.println(ThirdMaximumNumber.solution3(input));
+        */
+
+        int[][] input = {{-9, -9, -9,  1, 1, 1},
+                         { 0, -9,  0,  4, 3, 2},
+                         {-9, -9, -9,  1, 2, 3},
+                         { 0,  0,  8,  6, 6, 0},
+                         { 0,  0,  0, -2, 0, 0},
+                         { 0,  0,  1,  2, 4, 0}};
+        System.out.println(MaximumHourglassSum.solution(input));
+
 
     }
 }
