@@ -39,13 +39,31 @@ public class RotateArray {
         int[] newArr = new int[nums.length];
         int z = k % nums.length;
         for(int i = 0; i < nums.length; i++){
-            if(i < k)
-                newArr[i+(nums.length-k)] = nums[i];
+            if(i <= nums.length-1-z)
+                newArr[i+z] = nums[i];
             else
-                newArr[i-k] = nums[i];
+                newArr[i-(nums.length-z)] = nums[i];
         }
 
         return newArr;
+    }
+
+    public static int[] solution2(int[] nums, int k){
+        k = k % nums.length;
+        int count = 0;
+        for (int start = 0; count < nums.length; start++) {
+            int current = start;
+            int prev = nums[start];
+            do {
+                int next = (current + k) % nums.length;
+                int temp = nums[next];
+                nums[next] = prev;
+                prev = temp;
+                current = next;
+                count++;
+            } while (start != current);
+        }
+        return nums;
     }
 
 }

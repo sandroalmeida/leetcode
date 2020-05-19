@@ -105,7 +105,7 @@ public class Main {
         */
 
         int[] input = {1,2,3,4,5,6,7};
-        int[] output = RotateArray.solution(input, 2);
+        int[] output = RotateArray.solution2(input, 3);
 
         for(int i : output){
             System.out.println(i);
