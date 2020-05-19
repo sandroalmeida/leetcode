@@ -2,6 +2,7 @@ package info.sandroalmeida;
 
 import info.sandroalmeida.easy.MonotonicArray;
 import info.sandroalmeida.easy.RotateArray;
+import info.sandroalmeida.easy.SortArrayByParity;
 import info.sandroalmeida.easy.ThirdMaximumNumber;
 import info.sandroalmeida.hackerrank.MaximumHourglassSum;
 
@@ -104,8 +105,17 @@ public class Main {
         System.out.println(MaximumHourglassSum.solution(input));
         */
 
+        /*
         int[] input = {1,2,3,4,5,6,7};
         int[] output = RotateArray.solution2(input, 3);
+
+        for(int i : output){
+            System.out.println(i);
+        }
+        */
+
+        int[] input = {1,2,3,4,5,6,7};
+        int[] output = SortArrayByParity.solution(input);
 
         for(int i : output){
             System.out.println(i);
