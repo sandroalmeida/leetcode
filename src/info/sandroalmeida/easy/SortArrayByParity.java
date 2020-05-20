@@ -30,4 +30,21 @@ public class SortArrayByParity {
         return output;
     }
 
+    public static int[] solution2(int[] input){
+        int i = 0;
+        int j = input.length - 1;
+        int temp;
+
+        while(i < j){
+            if(input[i]%2!=0 && input[j]%2==0){
+                temp = input[j];
+                input[j] = input[i];
+                input[i] = temp;
+            }
+            if(input[i]%2==0) i++;
+            if(input[j]%2!=0) j--;
+        }
+        return input;
+    }
+
 }

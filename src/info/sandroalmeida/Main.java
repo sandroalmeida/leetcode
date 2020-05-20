@@ -115,7 +115,7 @@ public class Main {
         */
 
         int[] input = {1,2,3,4,5,6,7};
-        int[] output = SortArrayByParity.solution(input);
+        int[] output = SortArrayByParity.solution2(input);
 
         for(int i : output){
             System.out.println(i);
