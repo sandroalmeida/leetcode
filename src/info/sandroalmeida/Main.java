@@ -2,6 +2,7 @@ package info.sandroalmeida;
 
 import info.sandroalmeida.easy.*;
 import info.sandroalmeida.hackerrank.MaximumHourglassSum;
+import info.sandroalmeida.hackerrank.PrintLinkedList;
 
 public class Main {
 
@@ -120,8 +121,14 @@ public class Main {
         }
         */
 
+        /*
         int[] input = {1,2,3,4,5,6,7};
         System.out.println(BinarySearch.solution(input, -1));
+        */
+
+        int[] input = {1,2,3,0,5,-1,7};
+        PrintLinkedList linkedList = new PrintLinkedList(input);
+        linkedList.print();
 
 
     }
