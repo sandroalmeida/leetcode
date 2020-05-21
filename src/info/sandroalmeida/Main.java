@@ -1,9 +1,6 @@
 package info.sandroalmeida;
 
-import info.sandroalmeida.easy.MonotonicArray;
-import info.sandroalmeida.easy.RotateArray;
-import info.sandroalmeida.easy.SortArrayByParity;
-import info.sandroalmeida.easy.ThirdMaximumNumber;
+import info.sandroalmeida.easy.*;
 import info.sandroalmeida.hackerrank.MaximumHourglassSum;
 
 public class Main {
@@ -114,12 +111,18 @@ public class Main {
         }
         */
 
+        /*
         int[] input = {1,2,3,4,5,6,7};
         int[] output = SortArrayByParity.solution2(input);
 
         for(int i : output){
             System.out.println(i);
         }
+        */
+
+        int[] input = {1,2,3,4,5,6,7};
+        System.out.println(BinarySearch.solution(input, -1));
+
 
     }
 }
