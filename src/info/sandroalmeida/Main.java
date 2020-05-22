@@ -126,10 +126,14 @@ public class Main {
         System.out.println(BinarySearch.solution(input, -1));
         */
 
+        /*
         int[] input = {1,2,3,0,5,-1,7};
         PrintLinkedList linkedList = new PrintLinkedList(input);
         linkedList.print();
+        */
 
+        int[] input = {1,1,2,2,5};
+        System.out.println(SingleNumber.solution(input));
 
     }
 }
