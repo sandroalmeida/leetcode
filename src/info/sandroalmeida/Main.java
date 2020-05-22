@@ -1,6 +1,7 @@
 package info.sandroalmeida;
 
 import info.sandroalmeida.easy.*;
+import info.sandroalmeida.hackerrank.CheckMessage;
 import info.sandroalmeida.hackerrank.MaximumHourglassSum;
 import info.sandroalmeida.hackerrank.PrintLinkedList;
 
@@ -132,8 +133,14 @@ public class Main {
         linkedList.print();
         */
 
+        /*
         int[] input = {1,1,2,2,5};
         System.out.println(SingleNumber.solution(input));
+        */
+
+        String[] magazine = {"A","new","revolution","is","coming", "soon", "stay", "alert"};
+        String[] message = {"Alert", "coming", "soon"};
+        System.out.println(CheckMessage.solution(message, magazine));
 
     }
 }
