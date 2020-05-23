@@ -138,9 +138,9 @@ public class Main {
         System.out.println(SingleNumber.solution(input));
         */
 
-        String[] magazine = {"A","A","new","revolution","is","coming", "soon", "stay", "alert"};
+        String[] magazine = {"A","new","revolution","is","coming", "soon", "stay", "alert"};
         String[] message = {"alert","A","A", "coming", "soon"};
-        System.out.println(CheckMessage.solution2(message, magazine));
+        System.out.println(CheckMessage.solution3(message, magazine));
 
     }
 }

@@ -49,4 +49,22 @@ public class CheckMessage {
         return map;
     }
 
+    //This is an optimization on the solution 2, here we will use just one Hashmap
+    public static boolean solution3(String[] message, String[] magazine) {
+        Map<String, Integer> magazineFrequency = getFrequency(magazine);
+
+        for(String s: message){
+            Integer magazineValue = magazineFrequency.get(s);
+            if(magazineValue == null)
+                return false;
+            else{
+                if(magazineValue > 1)
+                    magazineFrequency.put(s, (magazineValue - 1));
+                else
+                    magazineFrequency.remove(s);
+            }
+        }
+        return true;
+    }
+
 }
